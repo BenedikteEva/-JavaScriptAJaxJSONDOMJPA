@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exam Preparation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+  
+    <link rel="stylesheet" href="style.css">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+</head>
+
+<body >
+  
+    <H2>Users from Fetch</h2>
+    <div class="container">
+
+        <button class="submit" id="btnsend" > GetAllUsers </button>
+        <br><br>
+     
+             
+                     input User id :<br>
+                        <input id="userId" type="number" value="100"  >
+                     
+        <button id="showSingleUser" class="submit">showSingleUser </button>
+        <button id="userDelete" class="submit">DeleteUser </button>
+    <br><br>
+    <table id="tbl" class="table">
+            <thead>
+                <th>First Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </thead>
+           
+            <tbody id="tblbody"></tbody>
+        </table>
+</div>
+
+<div class="container">
+   Add User Info:<br>
+  
+   <p>Age:</p>  <input id="fage" type="text" name="fage">
+   <p> Name: </p><input id="fname" type="text" name="fname">
+   <p> Gender</p><select id="fgender">
+            <option>male</option>
+            <option>female</option>
+        </select>
+        <p> Email: </p><input id="femail" type="text" name="femail">
+    <button id="addUser" class="submit">AddUser </button>
+
+</div>
+<br><br>
+<div class="container">
+Update user 
+<p>userId:</p> <br> <input id="userIdUpdate" type="number" name="userIdUpdate">
+<button id="updateUser" class="submit">UpdateUser </button>
+               
+</div>
+
+        
+  
+    <script src="bundle.js"></script>
+</body>
+
+</html>
